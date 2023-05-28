@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="../img/logo.png" alt="Logo de Barbería Alura" /></h1>
+        <!-- Para ingresar el panel de navegación -->
+        <nav>
+          <ul class="navegacion">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required />
+
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+
+        <label for="telefono">Télefono</label>
+        <input
+          type="tel"
+          name=""
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(xx) xxxx xxxx"
+        />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="60"
+          rows="10"
+          class="input-padron"
+          required
+        ></textarea>
+
+        <!-- Con la propiedad name se les indica que todos pertenecen al mismo grupo de elementos
+        para que no se puedan seleccionar todos los radios al mismo tiempo -->
+
+        <!--Fieldset todos los items pertenecen o hacen referencia a la misma cosa,
+            este no usa la "p" para colocar texto, usa la etiqueta legend-->
+        <fieldset>
+          <legend>Cómo le gustaría que lo contactemos?</legend>
+
+          <label for="radio-email">
+            <input type="radio" name="contacto" value="email" id="email" />
+            Email</label
+          >
+
+          <label for="radio-telefono">
+            <input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="telefono"
+            />
+            Teléfono</label
+          >
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              name="contacto"
+              value="WhatsApp"
+              id="radio-whatsapp"
+              checked
+            />
+            WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>En cuál horario prefiere ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+
+        <label for="" class="checkbox">
+          <input type="checkbox" name="" id="" checked />
+          le gustaría recebir novedades de la Barbería Alura?
+        </label>
+
+        <input type="submit" value="Enviar formulario" class="enviar" />
+      </form>
+      <table>
+        <!-- Encabezado de la tabla -->
+        <thead>
+          <th>Día</th>
+          <th>Horario</th>
+        </thead>
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Miércoloes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="../img/logo-blanco.png" alt="Logo de Barbería Alura" />
+      <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+    </footer>
+  </body>
+</html>

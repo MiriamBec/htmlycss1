@@ -1,0 +1,252 @@
+body{
+  /* fuente inportada de https://fonts.google.com/ el link de la fuente Montserrat esta en el HTML */
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background-color: #bbb;
+  padding: 20px 0;
+}
+.caja{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a{
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+
+}
+.productos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.productos li {
+  display: inline-block;
+  text-align: center;
+  /* Cada elemento ocupa el 30% del espacio para que tengan el mismo tamaño */
+  width: 30%; 
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  /* El borde de cada unos de los items sera el limite del espacio que va a ser definido
+  (El paddin del elemento se va a contabilizar dentro del tamaño del elemento) */
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.productos li:hover{
+  border-color: #c78c19;
+}
+.productos li:active{
+  border-color: #088c19;
+}
+.productos h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* Cuando el mouse se posicione en el li aplica al h2 */
+.productos li:hover h2{
+  font-size: 33px;
+}
+.producto-descripcion{
+  font-size: 18px;
+}
+.producto-precio{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Position: relative; Es el punto exactamente donde se cuentra pero se puede
+empezar a modificar.
+Position: static; viene por defecto y no se puede modificar
+postion: absolute; Con la position: absolute, yo puedo
+posicionar mi elemento en cualquier lugar de la página. */
+footer{
+  text-align: center;
+  background: url(../img/bg.jpg);
+  padding: 40px;
+}
+.copyright{
+  color: #fff;
+  font-size: 13px;
+  margin: 20px;
+}
+/* unicode-table.com para conseguir el codigo de caracteres */
+
+
+/* PÁGINA DE CONTACTO */
+form{
+  margin: 40px 0;
+}
+form label, form legend{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.input-padron{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+.checkbox{
+  margin: 20px 0;
+}
+.enviar{
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  /* aplicar transición para todas las propiedades que estan en hover */
+  transition: 1s all;
+   cursor: pointer;
+}
+.enviar:hover{
+  background-color: darkorange;
+  /* cambiar el tamaño del elemento aumentar 1.20*/
+  transform: scale(1.2);
+}
+table{
+  margin: 40px;
+}
+thead{
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+}
+td, th{
+  border: 1px solid #000;
+  padding: 8px 15px;
+}
+
+/* CSS para página inicial */
+.banner{
+width: 100%;
+}
+.principal{
+  padding: 3em 0;
+  background-color: #fefefe;
+   /* Una monitor padrin tiene 1270 y es una buena practicar utilizar 
+  940px para centralizar algo */
+  width: 940px;
+  margin: 0 auto;
+}
+.titulo-principal{
+  text-align: center;
+  /* 2m Le estamos diciendo que queremos dos veces el tamaño por defecto de la fuente que tiene el navegador */
+  font-size: 2em;
+  margin: 0 0 1em;
+  /* Cualquiwe configuración que venga despues del titulo la limpie de lado izquierdo,
+  visualmente no se mira nada, pero de le esta diciendo que la configuracion anterior
+  'float' solo aplica para el espacio dende esta*/
+  clear: left;
+  /* Sombra en el texto  pagina para pruebas de box-shadow  box shadow generator mozilla*/
+  /* text-shadow: 2px 2px 10px red ; */
+}
+/* Ejemplos de pseudocodigos - .titulo-principal::first-letter{
+  font-weight: bold;
+}
+p:first-line{
+  font-style: italic;
+} */
+.principal p{
+  margin: 0 0 1em;
+}
+.principal strong{
+  font-weight: bold;
+}
+.principal em{
+  font-style: italic;
+}
+.utensilios{
+  width: 120px;
+  /* float: es como si la imagen se despegara de la pägina, pero deja la sombre y es espacio de la sombra es ocupado */
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.mapa{
+  padding: 3em 0;
+  /* Se puede trabajar por angulos colocando los grados como primer parametro 45deg 
+  si se quiere modicar el espacio que abarca cada color se le pono la cantidad despues del color orange 50%*/
+  background: linear-gradient(#fefefe, #888);
+  /* radial-gradient - para que el degradado de color se en circulos */
+}
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+}
+.mapa-contenido{
+  width: 940px;
+  margin: 0 auto;
+}
+.diferenciales{
+  padding: 3em 0;
+  background-color: #888;
+}
+.contenido-diferenciales{
+  width: 640px;
+  margin: 0 auto;
+}
+.lista-diferenciales{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.items{
+  line-height: 1.5;
+}
+.items:before{
+  content: "\2605";
+}
+/* pseudaclaces (el primer hijo de .items). otras alternativas (nth-child(numero), last-child) */
+.items:first-child{
+  font-weight: bold;
+}
+.imagen-diferenciales{
+  width: 60%;
+  transition: 400ms;
+  /* derecha, bottom, ilumincacion, expanción */
+  box-shadow: 10px 10px 30px 15px #000;
+}
+.imagen-diferenciales:hover{
+  opacity: 0.3;
+}
+.video{
+  width: 560px;
+  margin: 1em auto;
+}
+@media screen and (max-width: 480px) {
+  h1{
+    text-align: center;
+  }
+  nav{
+    position:static;
+  }
+.caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+  width: auto;
+}
+.lista-diferenciales, .imagen-diferenciales{
+  width: 100%;
+}
+}
